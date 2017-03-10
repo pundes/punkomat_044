@@ -11,8 +11,6 @@ int tWidth, tHeight;
 void setup() {
    size(1024, 576);
   
-    frameRate(1);
-    
    img = loadImage("image.jpg");
    image(img, 0, 0);
    
@@ -35,8 +33,7 @@ void draw() {
     pictures[i].cropStart();  
     pictures[i].cropTiles(i); 
   }
-  
-  saveFrame ("img/img####.png");
+
 };
 
 class Picture {
